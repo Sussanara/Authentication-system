@@ -8,7 +8,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from flask_migrate import Migrate
 from flask_cors import CORS
 from api.utils import APIException, generate_sitemap
-from api.models import db
+from models import db, User
 from api.routes import api
 from api.admin import setup_admin
 from api.commands import setup_commands
