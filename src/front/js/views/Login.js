@@ -67,8 +67,8 @@ function Login() {
                 <div className="row">
                     <div className="col-md-12 d-flex justify-content-center">
                         <form className="m-5" style={{ width: '450px' }} onSubmit={(e) => handleSubmit(e)}>
-                            <div className='col-md-12 text-center mb-4'><h3>Login</h3></div>
-                            <div className="row mb-3">
+                            <div className='col-md-12 text-center mb-4'><h4>Login</h4></div>
+                            <div className="row mb-2">
                                 <label htmlFor="inputEmail3" className="col-sm-2 col-form-label">
                                     Email:
                                 </label>
@@ -76,7 +76,7 @@ function Login() {
                                     <input type="email" className="form-control" id="email" name="email" onChange={(e) => { setEmail(e.target.value) }} />
                                 </div>
                             </div>
-                            <div className="row mb-3">
+                            <div className="row mb-2">
                                 <label htmlFor="inputPassword3" className="col-sm-2 col-form-label">
                                     Password:
                                 </label>
@@ -89,7 +89,7 @@ function Login() {
                                     Sign in
                                 </button>
                             </div>
-                            <div className='mt-3 d-flex justify-content-center'><h5>Don't have an account? <Link to='/register'>Register here!</Link></h5></div>
+                            <div className='mt-3 d-flex justify-content-center'><p>Don't have an account? <Link to='/register'>Register</Link></p></div>
                         </form>
                     </div>
                 </div>

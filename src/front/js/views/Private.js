@@ -76,9 +76,9 @@ function Private() {
         </div >
       </nav >
       <div className='container d-flex mt-5 flex-column align-items-center'>
-        <h1>Private Data</h1>
-        <h3>You should be able to see this data only if you're correctly logged in.</h3>
-        <h4>User : {name}</h4>
+        <h3>Private Data</h3>
+        <h5>You should be able to see this data only if you're correctly logged in.</h5>
+        <h5>User : {name}</h5>
       </div>
     </div>
   )
