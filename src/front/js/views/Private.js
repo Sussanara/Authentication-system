@@ -7,7 +7,7 @@ function Private() {
   const [name, setName] = useState('')
 
   useEffect(() => {
-    fetch('http://127.0.0.1:5000/private', {
+    fetch('https://5000-4geeksacade-reactflaskh-eekacvxs32u.ws-us64.gitpod.io/private', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -77,7 +77,7 @@ function Private() {
       </nav >
       <div className='container d-flex mt-5 flex-column align-items-center'>
         <h3>Private Data</h3>
-        <h5>You should be able to see this data only if you're correctly logged in.</h5>
+        <h5>Debería poder ver estos datos solo si ha iniciado sesión correctamente.</h5>
         <h5>User : {name}</h5>
       </div>
     </div>

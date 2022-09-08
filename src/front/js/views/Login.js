@@ -10,7 +10,7 @@ function Login() {
 
 
     const sendDatabase = (userdata) => {
-        fetch('http://127.0.0.1:5000/login', {
+        fetch('https://5000-4geeksacade-reactflaskh-eekacvxs32u.ws-us64.gitpod.io/login', {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'
@@ -68,28 +68,28 @@ function Login() {
                     <div className="col-md-12 d-flex justify-content-center">
                         <form className="m-5" style={{ width: '450px' }} onSubmit={(e) => handleSubmit(e)}>
                             <div className='col-md-12 text-center mb-4'><h4>Login</h4></div>
-                            <div className="row mb-2">
+                            <div className="row mb-3">
                                 <label htmlFor="inputEmail3" className="col-sm-2 col-form-label">
                                     Email:
                                 </label>
-                                <div className="col-sm-10">
+                                <div className="col-sm-13">
                                     <input type="email" className="form-control" id="email" name="email" onChange={(e) => { setEmail(e.target.value) }} />
                                 </div>
                             </div>
-                            <div className="row mb-2">
-                                <label htmlFor="inputPassword3" className="col-sm-2 col-form-label">
-                                    Password:
+                            <div className="row mb-3">
+                                <label htmlFor="inputPassword3" className="col-sm-3 col-form-label">
+                                    Contraseña:
                                 </label>
-                                <div className="col-sm-10">
+                                <div className="col-sm-13">
                                     <input type="password" className="form-control" id="password" name="password" onChange={(e) => { setPassword(e.target.value) }} />
                                 </div>
                             </div>
                             <div className="d-grid">
-                                <button type="submit" className="btn btn-primary gap-2">
-                                    Sign in
+                                <button type="submit" className="btn btn-success gap-1">
+                                    Sign up
                                 </button>
                             </div>
-                            <div className='mt-3 d-flex justify-content-center'><p>Don't have an account? <Link to='/register'>Register</Link></p></div>
+                            <div className='mt-3 d-flex justify-content-center'><p>¿No tienes una cuenta? <Link to='/register'>Registrate</Link></p></div>
                         </form>
                     </div>
                 </div>

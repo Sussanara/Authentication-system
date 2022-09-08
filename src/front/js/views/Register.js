@@ -7,7 +7,7 @@ function Register() {
     const [registered, setRegistered] = useState(false)
 
     const sendDatabase = (userdata) => {
-        fetch('http://127.0.0.1:5000/register', {
+        fetch('https://5000-4geeksacade-reactflaskh-eekacvxs32u.ws-us64.gitpod.io/register', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -44,20 +44,20 @@ function Register() {
                             <label htmlFor="inputEmail3" className="col-sm-2 col-form-label">
                                 Email:
                             </label>
-                            <div className="col-sm-10">
+                            <div className="col-sm-13">
                                 <input type="email" className="form-control" id="email" name="email" onChange={(e) => setEmail(e.target.value)}/>
                             </div>
                         </div>
                         <div className="row mb-3">
                             <label htmlFor="inputPassword3" className="col-sm-2 col-form-label">
-                                Password:
+                                Contraseña:
                             </label>
-                            <div className="col-sm-10">
+                            <div className="col-sm-13">
                                 <input type="password" className="form-control" id="password" name="password" onChange={(e) => setPassword(e.target.value)}/>
                             </div>
                         </div>
                         <div className="d-grid">
-                            <button type="submit" className="btn btn-primary gap-2">
+                            <button type="submit" className="btn btn-success gap-2">
                                 Sign up
                             </button>
                         </div>
